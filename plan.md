@@ -1,13 +1,10 @@
 STEPS
 
-1- on dev/Docker_build
+1- on dev/Docker_build <COMPLETE>
     - write the Dockerfile
     - build the image   
     - local test
     - push to dockerhub
-
-    COMMANDS:
-    3 commands
 
 2- on dev/kubernetes_pod
     - pod.yaml

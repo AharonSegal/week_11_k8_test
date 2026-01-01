@@ -1,4 +1,4 @@
-# Streamlit Minikube App
+# streamlit Minikube App
 
 A simple Streamlit application that demonstrates basic data visualization with random data. This app generates and displays line charts, bar charts, and an interactive map.
 
