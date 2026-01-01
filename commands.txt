@@ -18,14 +18,21 @@ git commit -m "init"
 git commit -m "Docker_image_complete: local container running and image pushed"
 git push -u origin main
 
+git checkout main
 git checkout -b dev/Docker_build
+git checkout dev/Docker_build
 git checkout -b dev/kubernetes_pod
+git checkout dev/kubernetes_pod
 git checkout -b dev/kubernetes_service
+git checkout dev/kubernetes_service
+git pull
 
 git push -u origin dev/Docker_build
 git push -u origin dev/kubernetes_pod
 git push -u origin dev/kubernetes_service
+git push
 
+git merge main
 git merge dev/Docker_build
 git merge dev/kubernetes_pod
 git merge dev/kubernetes_service
@@ -51,9 +58,14 @@ docker push ""aharonsegal/streamlit:v1""
 minikube start
 kubectl get nodes
 kubectl config current-context
-kubectl apply -f k8/
+kubectl apply -f pod.yaml
 kubectl describe pod streamlit
-kubectl logs streamlit --tail=100
+kubectl apply -f service.yaml
+kubectl describe pod streamlit_service
+
+
+
+
 kubectl get pods streamlit
 kubectl get svc streamlit        
 kubectl get deploy streamlit     
