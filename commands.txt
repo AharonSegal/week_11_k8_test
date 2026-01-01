@@ -17,6 +17,7 @@ git add .
 git commit -m "init"
 git commit -m "Docker_image_complete: local container running and image pushed"
 git commit -m "Pod: complete"
+git commit -m "Service complete: run and added screenshot completed the readmes"
 git push -u origin main
 
 git checkout main
@@ -56,6 +57,7 @@ docker push ""aharonsegal/streamlit:v1""
 | Kubernetes COMMANDS |
 +---------------------+
 
+# START
 minikube start
 kubectl get nodes
 kubectl config current-context
